@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-lasya02.git"
   },
-  "author": "lasya02",
-  "license": "GPL-3.0",
+  "author": "@lasya02",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a02-functions-lasya02/issues"
   },
