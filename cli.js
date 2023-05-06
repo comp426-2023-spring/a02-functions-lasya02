@@ -4,8 +4,6 @@ import minimist from "minimist";
 import moment from 'moment-timezone';
 import fetch from 'node-fetch';
 
-var latitude = 100; 
-var longitutde = 300;
 
 var args = minimist(process.argv.slice(2));
 
