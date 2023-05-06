@@ -42,22 +42,22 @@ const longitutde = args.e || (-1 * args.w);
     if (args.d == null) {days = 1}
     else {days = args.d}
 
-    let weather = "The sun will rise at "
-    weather += APIdata.daily.sunrise[days]
-    weather += " and set at "
-    weather += APIdata.daily.sunset[days]
+    let printout = "The sun will rise at "
+    printout += APIdata.daily.sunrise[days]
+    printout += " and set at "
+    printout += APIdata.daily.sunset[days]
 
     if (days > 1) { 
-        weather += " in " + days + " days." 
+        printout += " in " + days + " days." 
     }
     else if (days == 0){ 
-        weather += " today. "
+        printout += " today. "
     }
-    else { weather += " tomorrow. "}
+    else { printout += " tomorrow. "}
 
-    if (APIdata.daily.precipitation_hours[days] != 0) {weather += "Be sure to pack an umbrella!"}
-    else {weather += "Thankfully, it looks like there won't be rain. "}
-    console.log(weather)
+    if (APIdata.daily.precipitation_hours[days] != 0) {printout += "Be sure to pack an umbrella!"}
+    else {printout += "Thankfully, it looks like there won't be rain. "}
+    console.log(printout)
 
 
 
